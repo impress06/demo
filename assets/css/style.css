@@ -191,7 +191,7 @@ body{
   .override {
     position: absolute;
     bottom: 0;
-    height:40px; 
+    height:0px; 
     background-color: #FF7E57;
     opacity: .7;
     width: 100%;
@@ -242,4 +242,9 @@ body{
   .slilinmis{
     background-color:green;
     font: 10px;
+  }
+  .cards:hover .override{
+    height: 275px; 
+    background-color: #FF7E57;
+    opacity: .7;
   }
