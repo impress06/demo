@@ -1,0 +1,245 @@
+ @import url(./variable.css);
+
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+body{
+    padding: 0.1px;
+}
+ 
+ .background-image {
+    position: fixed;
+    z-index: -4;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(10px);
+  }
+  .maincontainer{
+    width: 1101px;
+    margin:150px auto;
+    background-color:white;
+    min-height: 100vh;
+
+    
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 44px;
+    height:103px ;
+    position: relative;
+   
+  }
+  .profile{
+    display: flex;
+    gap: 8px;
+  }
+  .profile li{
+    list-style-position: inside;
+    color:gray;
+    font-size: 13px;
+    line-height: 12px;
+    font-family: var(--ff-roboto);
+  }
+  .profile li:first-child{
+    list-style: none;
+    margin-left: 40px;
+  }
+  .profile li:last-child{
+    margin-left: 20px;
+  }
+  .fa-solid{
+   color:white;
+   position: absolute;
+   top:35%;
+   left:30%;
+  
+  }
+  .shop{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:rgb(255, 126, 87) ;
+    outline: 10px solid white;
+    left:95%;
+    z-index: 10;
+    position: sticky ;
+    top:30px;
+   
+    
+  }
+  .shop:hover{
+    background-color:#000000 ;
+  }
+  .logo .store{
+    font-family: var(--ff-sans);
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+  .box{
+    font-family: var(--ff-sans);
+    font-size: 42px;
+    font-weight: lighter;
+    line-height: 50px;
+  }
+  .search input {
+    height: 40px;
+    width: 360px;
+    text-indent: 25px;
+    border: 0.0001em solid gray;
+    outline: none;
+    border-radius: 5px;
+
+    
+    
+  }
+  .slide{
+    position: relative;
+  }
+   .slide:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left:0;
+    height: 275px;
+    background :linear-gradient(180deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.662), rgba(255, 255, 255, 0.262),rgba(255, 255, 255, 0.13));
+  
+    
+  }
+  ul{
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 4;
+  }
+  .navlist{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 15px;
+    margin-left: 22px;
+    margin-top: 25px;
+  }
+  .navlist li:first-child{
+    color:#FF7E57;
+    font-family: var(--ff-roboto);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+  .navlist li{
+    cursor: pointer;
+  }
+  .navlist li:hover{
+
+  }
+
+  .secondarea{
+    width: 997px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: -185px;
+    background-color: white;
+    position: relative;
+    z-index: 8;
+  }
+  .secondarea .first{
+    font-family: var(--ff-roboto);
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .second{
+    font-family: var(--ff-roboto);
+    font-size: 30px;
+  }
+  .sectionone{
+   padding-top: 30px;
+   width: 945px;
+   margin:0 auto;
+   
+  }
+  .cards{
+    width: 180px;
+    text-align: justify;
+    margin-top:20px ;
+    margin-left: 20px;
+    position: relative;
+   
+    
+  }
+  .cards img{
+    width: 150px;
+  }
+  .storecontsiner{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .override {
+    position: absolute;
+    bottom: 0;
+    height:40px; 
+    background-color: #FF7E57;
+    opacity: .7;
+    width: 100%;
+    z-index: 6;
+    text-align: center;
+    transition: height 1s;
+    
+    
+  }
+  .override:hover{
+    height: 275px; 
+    background-color: #FF7E57;
+    opacity: .7;
+
+  }
+  .override:hover .fiyat{
+    display:none
+    
+  }
+  .override:hover .real{
+    display:block
+    
+  }
+  .as{
+    margin-bottom: 50px;
+  }
+  .fiyat{
+    position: relative;
+    padding:3px;
+    top: 10px;
+  }
+  .sepete{
+    padding: 3px;
+    border:none;
+    margin-top: 10px;
+    opacity: 1.6;
+  }
+  .sepete:hover{
+    transform:scale(1.1)
+  }
+  .real{
+    margin-top: 60px;
+    position: relative;
+    z-index: 9;
+    font-weight: bolder;
+    display: none;
+  }
+  .slilinmis{
+    background-color:green;
+    font: 10px;
+  }

@@ -1,0 +1,23 @@
+.deneme{
+    height: 400px;
+    width: 400px;
+    border:1px solid red;
+    margin: 0 auto;
+    position: relative;
+    transition:  background-color 5s;
+}
+.deneme2{
+    
+    bottom:0;
+    height: 30px;
+    width: 100%;
+    z-index: 3;
+    transition:  background-color 5s;
+
+
+}
+.deneme2:hover{
+    
+    height: 400px;
+    background-color: bisque;
+}
