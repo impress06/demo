@@ -202,9 +202,9 @@ body{
     
   }
   .override:hover{
-    height: 275px; 
+    height: 280px; 
     background-color: #FF7E57;
-    opacity: .7;
+   
 
   }
   .override:hover .fiyat{
@@ -224,13 +224,16 @@ body{
     top: 10px;
   }
   .sepete{
-    padding: 3px;
+    padding: 5px;
     border:none;
     margin-top: 10px;
-    opacity: 1.6;
+    border-radius: 10px;
+    
   }
   .sepete:hover{
-    transform:scale(1.1)
+    color:white;
+    background-color: #000000;
+    cursor:pointer
   }
   .real{
     margin-top: 60px;
@@ -244,7 +247,7 @@ body{
     font: 10px;
   }
   .cards:hover .override{
-    height: 275px; 
+    height: 280px; 
     background-color: #FF7E57;
-    opacity: .7;
+    
   }
